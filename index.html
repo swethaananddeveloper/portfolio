@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWETHA ANAND | Technical SEO & Front-End Developer Portfolio</title>
+    
+    <meta name="description" content="Results-driven professional with 4+ years of experience in Technical SEO, Front-End Development (HTML/CSS/JS/WordPress), and ROI-focused digital marketing campaigns.">
+    <meta name="keywords" content="Front-End Developer, SEO Specialist, Technical SEO, WordPress, Google Ads, Ahrefs, SEMrush, JavaScript, HTML, CSS, Digital Marketing Portfolio">
+    <meta name="author" content="SWETHA ANAND">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "SWETHA ANAND",
+      "jobTitle": "Technical SEO-Focused Front-End Developer",
+      "url": "YOUR_GITHUB_PAGES_URL",
+      "alumniOf": "Avinashi lingam Institute for Home Science and Higher Education for Women",
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Digital Marketing Executive",
+        "description": "4+ years of experience in SEO, PPC, social media marketing, and paid media strategy."
+      }
+    }
+    </script>
+    
+    <style>
+        /* Modern CSS Variables for Dark/Light Mode & Theming */
+        :root {
+            --color-primary: #3b82f6; /* A modern blue */
+            --color-secondary: #10b981; /* A complementing green */
+            --color-text-light: #f9fafb;
+            --color-text-dark: #1f2937;
+            --color-bg-light: #ffffff;
+            --color-bg-dark: #111827;
+            --color-card-light: #f3f4f6;
+            --color-card-dark: #1f2937;
+            --transition-speed: 0.3s;
+        }
+
+        /* Default (Light) Theme */
+        body {
+            background-color: var(--color-bg-light);
+            color: var(--color-text-dark);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color var(--transition-speed), color var(--transition-speed);
+        }
+
+        /* Dark Theme Toggle */
+        body.dark-mode {
+            background-color: var(--color-bg-dark);
+            color: var(--color-text-light);
+        }
+
+        body.dark-mode .card, body.dark-mode .nav-link, body.dark-mode .timeline-item {
+            background-color: var(--color-card-dark);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        body.dark-mode .heading, body.dark-mode .text-primary {
+             color: var(--color-primary);
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5em;
+            color: var(--color-primary);
+            border-bottom: 3px solid var(--color-secondary);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .text-primary {
+            color: var(--color-primary);
+        }
+        
+        .text-secondary {
+            color: var(--color-secondary);
+        }
+
+        /* Navigation */
+        .nav {
+            position: sticky;
+            top: 0;
+            background-color: var(--color-bg-light);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 10px 0;
+        }
+        
+        .nav.dark-mode {
+            background-color: var(--color-bg-dark);
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: inherit;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color var(--transition-speed);
+        }
+
+        .nav-link:hover {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+        }
+
+        /* Header/Hero Section */
+        #hero {
+            text-align: center;
+            padding: 100px 20px;
+            min-height: 80vh; /* Ensures it fills most of the screen */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            /* Cutting-edge text effect */
+            background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        #hero h2 {
+            font-size: 1.5em;
+            font-weight: 300;
+            margin-top: 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: var(--color-secondary);
+            color: var(--color-text-light);
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: left;
+        }
+
+        .skill-category {
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid var(--color-primary);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: background-color var(--transition-speed);
+        }
+        
+        .skill-category h3 {
+            color: var(--color-primary);
+            margin-top: 0;
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 10px;
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: var(--color-primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            z-index: 1;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 40%;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: var(--color-card-light);
+            transition: all var(--transition-speed);
+            z-index: 2;
+        }
+        
+        .timeline-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            right: -8px;
+            background-color: var(--color-secondary);
+            border: 3px solid var(--color-primary);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 3;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .right::after {
+            left: -8px;
+        }
+        
+        .timeline-item .date {
+            color: var(--color-secondary);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Projects Section */
+        .project-card {
+            background-color: var(--color-card-light);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--color-primary);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card h3 {
+            margin-top: 0;
+        }
+
+        .metric {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        
+        /* Footer/Contact */
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            background-color: var(--color-card-light);
+            border-top: 1px solid #ccc;
+        }
+        
+        .footer.dark-mode {
+             background-color: var(--color-card-dark);
+        }
+
+        .social-link {
+            font-size: 1.2em;
+            margin: 0 15px;
+            color: var(--color-primary);
+            transition: color 0.2s;
+        }
+
+        .social-link:hover {
+            color: var(--color-secondary);
+        }
+        
+        /* Dark Mode Toggle Button */
+        #dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--color-primary);
+            color: var(--color-text-light);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 1001;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            #hero h1 {
+                font-size: 2.5em;
+            }
+
+            /* Adjust timeline for smaller screens */
+            .timeline::after {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 15px;
+                left: 0 !important;
+                margin-bottom: 30px;
+            }
+
+            .timeline-item::after {
+                left: 13px !important;
+                right: auto;
+            }
+            
+            .right .timeline-item::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+    <nav class="nav" id="main-nav">
+        <ul class="nav-list container">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+    
+    <header id="hero" class="section">
+        <div class="container">
+            <h1>SWETHA ANAND</h1>
+            <h2>Technical SEO-Focused Front-End Developer</h2>
+            <p>
+                A **Results-driven digital marketing professional** with **4+ years 3 months of experience in SEO, PPC, social media marketing, and paid media strategy**. Proven expertise in **ROI-focused campaigns, scaling e-commerce revenue, and generating high-quality B2B & B2C leads**. My passion for **Search Engine Optimization** is combined with foundational **Front-End skills (HTML, CSS, JavaScript, WordPress)** to deliver technically sound, data-driven web solutions.
+            </p>
+            <a href="#projects" class="cta-button">View Quantifiable Results →</a>
+        </div>
+    </header>
+    
+    ---
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="heading">Technical Stack & Core Competencies</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-category">
+                    <h3>Technical SEO & Analytics</h3>
+                    <ul>
+                        <li><span class="text-primary">Technical SEO:</span> Site Audits, XML Sitemaps, robots.txt, **Page Speed Optimization**</li>
+                        <li><span class="text-primary">Core SEO:</span> On-Page SEO (meta tags, headings, content optimization), Off-Page SEO (link building, outreach)</li>
+                        <li><span class="text-primary">Analytics:</span> **Google Analytics**, Google Tag Manager, Google Search Console</li>
+                        <li><span class="text-primary">Tools:</span> **Ahrefs, SEMrush, Moz, Screaming Frog**, google trends</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Front-End & Platforms</h3>
+                    <ul>
+                        <li><span class="text-primary">Languages:</span> **HTML, CSS, JavaScript (Basics)**</li>
+                        <li><span class="text-primary">CMS/E-Commerce:</span> **WordPress, Webflow, Shopify, WooCommerce**</li>
+                        <li><span class="text-primary">Integration:</span> Zapier, API integration basics (implied by marketing tools)</li>
+                        <li><span class="text-primary">Soft Skills:</span> **Analytical Mindset**, Strategic Thinking, Problem-Solving, Team Leadership</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Digital Advertising & PPC</h3>
+                    <ul>
+                        <li><span class="text-primary">PPC:</span> **Google Ads, Meta Ads (Facebook & Instagram), LinkedIn Ads**, Programmatic Advertising</li>
+                        <li><span class="text-primary">Strategy:</span> ROI-focused campaigns, scaling e-commerce revenue</li>
+                        <li><span class="text-primary">SMM:</span> Social Media Marketing, **YouTube SEO**</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    ---
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="heading">Work History</h2>
+            
+            <div class="timeline">
+                
+                <div class="timeline-item right">
+                    <div class="date">2021 – 2023</div>
+                    <h3>Digital Marketing Executive</h3>
+                    <p class="text-primary">The Stanventure, India</p>
+                    <ul>
+                        <li>Drove data-informed decisions by tracking and analyzing traffic, user behavior, and conversions using **Google Analytics**.</li>
+                        <li>Enhanced organic visibility and website ranking by performing **SEO audits and competitive analysis**.</li>
+                        <li>Successfully implemented **Facebook retargeting strategies**, which reduced drop-offs and increased conversion rates.</li>
+                        <li>Strengthened local online footprint by developing and executing targeted **local SEO tactics**.</li>
+                        <li>Improved video rankings and visibility by optimizing content for **YouTube SEO**.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section id="projects" class="section" style="background-color: var(--color-card-light);">
+        <div class="container">
+            <h2 class="heading">Key Projects & Measurable Impact</h2>
+            <div class="skills-grid">
+                
+                <div class="project-card">
+                    <h3>Gaming Growth Campaign: SEO Optimization</h3>
+                    <div class="metric">Organic Traffic Boost: +45%</div>
+                    <div class="metric">Duration: 3 Months</div>
+                    <p>Improved keyword rankings and organic traffic by **45% in 3 months** through a multi-faceted approach, including technical fixes, targeted link building, and on-page SEO.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>SEO for SaaS Brand</h3>
+                    <div class="metric">Organic Sign-ups: +50%</div>
+                    <div class="metric">Strategy: Targeted SEO & Content</div>
